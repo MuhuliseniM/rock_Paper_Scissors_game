@@ -1,0 +1,41 @@
+/* static/style.css */
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #ff6f61;
+}
+
+form {
+    margin: 20px;
+}
+
+select, button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+button {
+    background-color: #ff6f61;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.result {
+    font-size: 2rem;
+    margin-top: 30px;
+}

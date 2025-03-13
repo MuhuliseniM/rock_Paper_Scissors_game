@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Rock Paper Scissors - Cute Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>🌟 Rock Paper Scissors 🌟</h1>
+
+    <!-- Display Score -->
+    <div class="score">
+        <h2>Score</h2>
+        <p>User: <span id="user-score">{{ user_score }}</span></p>
+        <p>Computer: <span id="computer-score">{{ computer_score }}</span></p>
+        <p>Ties: <span id="tie-score">{{ tie_score }}</span></p>
+    </div>
+
+    <!-- Game Form to Choose Move -->
+    <form method="POST">
+        <label>Choose your move:</label>
+        <select name="choice" required>
+            <option value="rock">✊ Rock</option>
+            <option value="paper">✋ Paper</option>
+            <option value="scissors">✌️ Scissors</option>
+        </select>
+        <button type="submit">Play! 🎮</button>
+    </form>
+
+    <!-- Display Game Result -->
+    {% if result %}
+        <div class="result">
+            <h2>{{ result }}</h2>
+            <p>You chose: {{ user }}</p>
+            <p>Computer chose: {{ computer }}</p>
+        </div>
+    {% endif %}
+
+</body>
+
+</html>
