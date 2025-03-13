@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-size: 3rem;
-    color: ##333333;
+    color: #87247c;
 }
 
 form {
@@ -25,7 +25,7 @@ select, button {
 }
 
 button {
-    background-color: #333333;
+    background-color: #87247c;
     color: white;
     cursor: pointer;
     transition: transform 0.3s ease;
